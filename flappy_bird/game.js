@@ -22,11 +22,11 @@ function loadAudio(path, loop = false, volume = 1){
 }
 
 const sounds = {
-  wing: loadAudio('assets/sound efects/wing.wav', false, 0.9) || loadAudio('assets/sound efects/wing.ogg'),
-  point: loadAudio('assets/sound efects/point.wav') || loadAudio('assets/sound efects/point.ogg'),
-  hit: loadAudio('assets/sound efects/hit.wav') || loadAudio('assets/sound efects/hit.ogg'),
-  die: loadAudio('assets/sound efects/die.wav') || loadAudio('assets/sound efects/die.ogg'),
-  swoosh: loadAudio('assets/sound efects/swoosh.wav', false, 0.5) || loadAudio('assets/sound efects/swoosh.ogg', false, 0.5)
+  wing: loadAudio('assets/Sound_Effects/wing.wav', false, 0.9) || loadAudio('assets/Sound_Effects/wing.ogg'),
+  point: loadAudio('assets/Sound_Effects/point.wav') || loadAudio('assets/Sound_Effects/point.ogg'),
+  hit: loadAudio('assets/Sound_Effects/hit.wav') || loadAudio('assets/Sound_Effects/hit.ogg'),
+  die: loadAudio('assets/Sound_Effects/die.wav') || loadAudio('assets/Sound_Effects/die.ogg'),
+  swoosh: loadAudio('assets/Sound_Effects/swoosh.wav', false, 0.5) || loadAudio('assets/Sound_Effects/swoosh.ogg', false, 0.5)
 };
 
 let gameRunning = false;
@@ -35,17 +35,17 @@ let score = 0;
 let lastFrame = performance.now();
 let dt = 16;
 
-bgImg.src = "assets/flappy bird/background-day.png";
-const groundImg = new Image(); groundImg.src = 'assets/flappy bird/base.png';
-const pipeImg = new Image(); pipeImg.src = 'assets/flappy bird/pipe-green.png';
+bgImg.src = "assets/flappy_bird/background-day.png";
+const groundImg = new Image(); groundImg.src = 'assets/flappy_bird/base.png';
+const pipeImg = new Image(); pipeImg.src = 'assets/flappy_bird/pipe-green.png';
 const birdSprites = [new Image(), new Image(), new Image()];
-birdSprites[0].src = 'assets/flappy bird/yellowbird-upflap.png';
-birdSprites[1].src = 'assets/flappy bird/yellowbird-midflap.png';
-birdSprites[2].src = 'assets/flappy bird/yellowbird-downflap.png';
+birdSprites[0].src = 'assets/flappy_bird/yellowbird-upflap.png';
+birdSprites[1].src = 'assets/flappy_bird/yellowbird-midflap.png';
+birdSprites[2].src = 'assets/flappy_bird/yellowbird-downflap.png';
 const pipeTopImg = new Image();
-pipeTopImg.src = 'assets/flappy bird/pipe-green.png';
+pipeTopImg.src = 'assets/flappy_bird/pipe-green.png';
 const pipeBottomImg = new Image();
-pipeBottomImg.src = 'assets/flappy bird/pipe-green.png';
+pipeBottomImg.src = 'assets/flappy_bird/pipe-green.png';
 
 const BASE_HEIGHT = 112;
 let baseX = 0;
