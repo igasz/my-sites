@@ -35,17 +35,17 @@ let score = 0;
 let lastFrame = performance.now();
 let dt = 16;
 
-bgImg.src = "assets/flappy_bird/background-day.png";
-const groundImg = new Image(); groundImg.src = 'assets/flappy_bird/base.png';
-const pipeImg = new Image(); pipeImg.src = 'assets/flappy_bird/pipe-green.png';
+bgImg.src = "assets/Flappy_Bird/background-day.png";
+const groundImg = new Image(); groundImg.src = 'assets/Flappy_Bird/base.png';
+const pipeImg = new Image(); pipeImg.src = 'assets/Flappy_Bird/pipe-green.png';
 const birdSprites = [new Image(), new Image(), new Image()];
-birdSprites[0].src = 'assets/flappy_bird/yellowbird-upflap.png';
-birdSprites[1].src = 'assets/flappy_bird/yellowbird-midflap.png';
-birdSprites[2].src = 'assets/flappy_bird/yellowbird-downflap.png';
+birdSprites[0].src = 'assets/Flappy_Bird/yellowbird-upflap.png';
+birdSprites[1].src = 'assets/Flappy_Bird/yellowbird-midflap.png';
+birdSprites[2].src = 'assets/Flappy_Bird/yellowbird-downflap.png';
 const pipeTopImg = new Image();
-pipeTopImg.src = 'assets/flappy_bird/pipe-green.png';
+pipeTopImg.src = 'assets/Flappy_Bird/pipe-green.png';
 const pipeBottomImg = new Image();
-pipeBottomImg.src = 'assets/flappy_bird/pipe-green.png';
+pipeBottomImg.src = 'assets/Flappy_Bird/pipe-green.png';
 
 const BASE_HEIGHT = 112;
 let baseX = 0;
