@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body {
+            background-color: rgb(249, 243, 239);
+        }
+        
+        .pitstop-section {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            background: url('pitstopcz.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center center;
+            margin-left: -10px;
+            margin-right: -10px;
+            }
+
+        .pitstop-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            opacity: 0;
+            transform: scale(1.2);
+            transition: all 1.5s ease;
+            }
+
+        .pitstop-section.active .pitstop-overlay {
+            opacity: 1;
+            transform: scale(1);
+            }
+
+        .formula-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
+            color: rgb(210, 193, 182);
+            font-size: 4rem;
+            font-family: "DM Serif Display", serif;
+            z-index: 3;
+            }
+
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            margin-top: -20px;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .prostokat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 120px;
+            background-color: rgb(210, 193, 182);
+            text-decoration: none;
+            font-family: "DM Serif Display", serif;
+            transition: background-color 0.3s;
+            color: rgb(69, 104, 130); 
+        }
+
+        .kontakt {
+            background: url("track.jpg") center/cover no-repeat;
+            margin-left: -10px;
+            margin-right: -10px;
+            color: rgb(249, 243, 239);
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+            padding: 80px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 15px;  
+        }
+
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(249, 243, 239);
+            color: rgb(69, 104, 130);
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(249, 243, 239);
+            color: rgb(69, 104, 130);
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+        }
+
+        textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(249, 243, 239);
+            color: rgb(69, 104, 130);
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+        }
+
+
+        footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 10px 30px;
+            color: rgb(25, 50, 69);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="pitstop-section" id="pitstop">
+            <div class="pitstop-overlay"></div>
+            <h1 class="formula-title" id="formulaTitle"> Formuła 1</h1>
+        </section>
+    </header>
+
+    <nav> 
+        <a href="home.html", class="prostokat"> Home </a>
+        <a href="kalendarz.html", class="prostokat"> Kalendarz </a>
+        <a href="gallery.html", class="prostokat"> Galeria </a>
+        <a href="contact.html", class="prostokat"> Kontakt </a>
+    </nav>
+
+    <section class="kontakt">
+        <h1>Chcesz się ze mną skontaktować?</h1>
+        <h2>Wypełnij poniżej!</h2>
+        <form id="form">
+            <select id="temat" required>
+                <option value="">Wybierz temat</option>
+                <option value="Współpraca">Współpraca</option>
+                <option value="Pytanie">Pytanie</option>
+                <option value="Inne">Inne</option>
+            </select>
+            Imię i Nazwisko: <input type="text" id="imie" placeholder="Imię"> <input type="text" id="nazwisko" placeholder="Nazwisko"> 
+            Email: <input type="text" id="email" placeholder="Email"> 
+            Numer telefonu: <input type="text" placeholder="Numer Telefonu"> 
+            Wiadomość: <textarea id="wiadomosc" placeholder="Napisz wiadomość..." required></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
+
+    <script src="script1.js"></script>
+    <script src="script3.js"></script>
+
+    <footer>
+        <p>Autor Strony: Iga Szaflik</p>
+    </footer>
+</body>
+</html>
