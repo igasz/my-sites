@@ -302,6 +302,8 @@ function drawBase() {
 //gra
 let lastTime = performance.now();
 function gameLoop() {
+    ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
     ctx.drawImage(bgImg, 0, 0, WIDTH, HEIGHT);
     
     let now = performance.now();
@@ -319,8 +321,6 @@ function gameLoop() {
              return;
         }
     }
-
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
 
     if (gameRunning) {
         updatePipes();
