@@ -1,0 +1,119 @@
+:root {
+  --color-bg: #f9f7f2;  
+  --color-card: #fbf9f7ff; 
+  --color-text-main: #3a241c;
+  --color-text-sec: #59392d;
+  --color-accent: #9b6f53; 
+  --color-border: #cbb4a0;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+a:hover {
+  color: var(--color-accent);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text-main);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-text-main);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-text-sec);
+  color: #fff;
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: var(--color-text-main);
+  transform: translateY(-2px); 
+}
+
+nav {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+input {
+  padding: 15px;
+  border: 1px solid var(--color-text-sec);
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--color-accent); 
+  box-shadow: 0 4px 12px rgba(58, 36, 28, 0.1);
+}
+
+textarea {
+  padding: 15px;
+  border: 1px solid var(--color-text-sec);
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.rating-container {
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+}
+
+.rating-container p {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 32px;
+  color: var(--color-border);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, transform 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: var(--color-accent);
+}
