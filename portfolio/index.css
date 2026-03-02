@@ -1,0 +1,127 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 375;
+    font-style: normal;
+    background-color: #2C2C2C;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    letter-spacing: 2px;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #2C2C2C; 
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2); 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    margin-bottom: 40px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: #dddddd;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #aaaaaa;
+}
+
+section {
+    display: none; 
+}
+
+section.active-section {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 50px; 
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texts {
+    border: 0.5px dashed #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    flex: 1 1 300px; 
+    box-sizing: border-box;
+    background-color: #363636; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.texts:hover {
+    transform: translateY(-5px);
+}
+
+.texts h4 {
+    margin-top: 0; 
+    color: #ffffff; 
+    border-bottom: 1px solid #555; 
+    padding-bottom: 10px;
+}
+
+.text a {
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.header {
+    border: 0.5px dashed #ffffff;
+    border-radius: 30px;
+    padding: 20px;
+    flex: center; 
+    box-sizing: border-box;
+    background-color: #363636; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.header:hover {
+    transform: translateY(-5px);    
+}
