@@ -28,3 +28,10 @@ const btnAbout = document.getElementById('btn-about');
             hideAllSections();
             secProjects.classList.add('active-section');
         });
+
+const photoStack = document.getElementById('photo-stack');
+
+photoStack.addEventListener('click', () => {
+    const topPhoto = photoStack.firstElementChild;
+    photoStack.appendChild(topPhoto);
+});
